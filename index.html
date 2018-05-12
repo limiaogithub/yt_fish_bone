@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9"/>
+</head>
+
+<script src="fishbone1.0/require/jquery-1.11.1.min.js"></script>
+<script src="fishbone1.0/FishBone.js"></script>
+<script src="FishBoneJson.js"></script>
+<link rel="stylesheet" type="text/css" href="fishbone1.0/css/base.css">
+
+<body>
+<!--style="border:1px dotted red;text-align: left"   -->
+<div id="helloWorld" ></div>
+</body>
+<script>
+    $(document).ready(function () {
+        $("#helloWorld").FishBone({
+            /*json数据！重要，必填*/
+            jsonData: testFishData
+            //画布大小，默认900,700
+            //canvasSize: [900, 700],
+            //双击节点事件
+            //clickNodeFunction:function(node){
+            //    alert(node.text);
+            //},
+            //右键事件
+            //rClickNodeFunction:function(node){
+            //    alert(node.text);
+            //},
+            //鼠标浮动事件
+            //mouseOverFunction:function(node){
+            //    alert(node.text);
+            //}
+        });
+    });
+
+</script>
+</html>
